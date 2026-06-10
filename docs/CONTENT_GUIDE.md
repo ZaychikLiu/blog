@@ -50,6 +50,10 @@ widgets:
     author: Zaychik Liu
     avatar: /img/avatar.svg
     follow_link: https://github.com/ZaychikLiu
+    social_links:
+      Xiaohongshu:
+        icon: fas fa-book-open
+        url: https://www.xiaohongshu.com/user/profile/your-xiaohongshu-id
 ```
 
 常改项：
@@ -57,6 +61,7 @@ widgets:
 - 博客标题：`_config.yml` 的 `title`，以及 `_config.icarus.yml` 的 `logo.text`
 - 作者名：两个文件里的 `author`
 - GitHub 链接：`_config.icarus.yml` 里的 `github.com/ZaychikLiu`
+- 小红书链接：把 `_config.icarus.yml` 和 `_config.yml` 里的 `your-xiaohongshu-id` 替换成你的小红书主页 ID 或完整主页 URL
 - 头像：替换 `source/img/avatar.svg`，或者把 `avatar` 改成一张外链图片
 - 页脚年份和名字：`_config.icarus.yml` 的 `footer.copyright`
 
@@ -484,14 +489,17 @@ advanced:
 advanced:
   share:
     enabled: true
+    xiaohongshu_profile: https://www.xiaohongshu.com/user/profile/your-xiaohongshu-id
+    xiaohongshu_text: "{title}\n{url}"
     platforms:
       - x
       - linkedin
       - email
+      - xiaohongshu
       - copy
 ```
 
-不想要哪个就删掉哪一行。
+小红书没有统一的网页分享接口，这里的 `xiaohongshu` 按钮会复制“文章标题 + 链接”的发布文案，方便粘贴到小红书。`xiaohongshu_profile` 同时用于记录你的小红书主页地址。不想要哪个平台就删掉哪一行。
 
 ## 19. SEO 文件
 

@@ -43,6 +43,9 @@ navbar:
     GitHub:
       icon: fab fa-github
       url: https://github.com/ZaychikLiu
+    Xiaohongshu:
+      icon: fas fa-book-open
+      url: https://www.xiaohongshu.com/user/profile/your-xiaohongshu-id
 
 footer:
   copyright: "© 2026 Zaychik Liu"
@@ -100,6 +103,9 @@ widgets:
       LinkedIn:
         icon: fab fa-linkedin
         url: https://www.linkedin.com/
+      Xiaohongshu:
+        icon: fas fa-book-open
+        url: https://www.xiaohongshu.com/user/profile/your-xiaohongshu-id
       RSS:
         icon: fas fa-rss
         url: /atom.xml

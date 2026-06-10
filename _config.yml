@@ -115,10 +115,13 @@ advanced:
   heading_anchors: true
   share:
     enabled: true
+    xiaohongshu_profile: https://www.xiaohongshu.com/user/profile/your-xiaohongshu-id
+    xiaohongshu_text: "{title}\n{url}"
     platforms:
       - x
       - linkedin
       - email
+      - xiaohongshu
       - copy
   popular_posts:
     enabled: true

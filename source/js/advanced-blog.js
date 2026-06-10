@@ -82,6 +82,36 @@
     }
   }
 
+  async function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      await navigator.clipboard.writeText(text);
+      return;
+    }
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'fixed';
+    textarea.style.left = '-9999px';
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    textarea.remove();
+  }
+
+  function xiaohongshuText(template, title, url) {
+    return (template || '{title}\n{url}')
+      .replace(/\\n/g, '\n')
+      .replace(/\{title\}/g, title)
+      .replace(/\{url\}/g, url);
+  }
+
+  function setTemporaryLabel(button, text, resetText) {
+    const span = button.querySelector('span');
+    if (!span) return;
+    span.textContent = text;
+    setTimeout(() => { span.textContent = resetText; }, 1400);
+  }
+
   function shareUrl(platform, title, url) {
     const encodedUrl = encodeURIComponent(url);
     const encodedTitle = encodeURIComponent(title);
@@ -105,7 +135,7 @@
     const content = main.querySelector('article.article .content');
     if (!content) return;
 
-    const platforms = share.platforms || ['x', 'linkedin', 'email', 'copy'];
+    const platforms = share.platforms || ['x', 'linkedin', 'email', 'xiaohongshu', 'copy'];
     const title = document.querySelector('article.article h1.title')?.textContent?.trim() || document.title;
     const url = window.location.href.split('#')[0];
 
@@ -118,9 +148,21 @@
         button.type = 'button';
         button.innerHTML = '<i class="fas fa-link"></i><span>Copy link</span>';
         button.addEventListener('click', async () => {
-          await navigator.clipboard.writeText(url);
-          button.querySelector('span').textContent = 'Copied';
-          setTimeout(() => { button.querySelector('span').textContent = 'Copy link'; }, 1400);
+          await copyText(url);
+          setTemporaryLabel(button, 'Copied', 'Copy link');
+        });
+        bar.appendChild(button);
+        return;
+      }
+
+      if (platform === 'xiaohongshu') {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.title = 'Copy text for Xiaohongshu';
+        button.innerHTML = '<i class="fas fa-book-open"></i><span>小红书</span>';
+        button.addEventListener('click', async () => {
+          await copyText(xiaohongshuText(share.xiaohongshu_text, title, url));
+          setTemporaryLabel(button, '已复制', '小红书');
         });
         bar.appendChild(button);
         return;
