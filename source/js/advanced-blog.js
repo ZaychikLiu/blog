@@ -159,7 +159,7 @@
     card.dataset.advancedToc = 'true';
     card.innerHTML = `
       <div class="card-content">
-        <h3 class="menu-label">${toc.title || 'On This Page'}</h3>
+        <h3 class="menu-label">${toc.title || 'Contents'}</h3>
         <ul class="advanced-toc-list"></ul>
       </div>`;
 
@@ -174,7 +174,12 @@
       list.appendChild(li);
     });
 
-    sidebar.appendChild(card);
+    const profile = sidebar.querySelector('.widget[data-type="profile"], .card.widget');
+    if (profile && profile.nextSibling) {
+      sidebar.insertBefore(card, profile.nextSibling);
+    } else {
+      sidebar.appendChild(card);
+    }
   }
 
   function addComments() {
@@ -185,7 +190,7 @@
     const card = document.createElement('div');
     card.className = 'card advanced-comments-card';
     card.id = 'comments';
-    card.innerHTML = '<div class="card-content"><h3 class="title is-5">Comments</h3><div class="advanced-comments-target"></div></div>';
+    card.innerHTML = '<div class="card-content"><h3 class="title is-5">Comments</h3><div class="advanced-comments-hint">评论区使用 GitHub Issues/Discussions。上线后安装对应 GitHub App 即可让读者留言。</div><div class="advanced-comments-target"></div></div>';
     main.appendChild(card);
     const target = card.querySelector('.advanced-comments-target');
 

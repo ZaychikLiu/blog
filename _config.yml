@@ -130,12 +130,12 @@ advanced:
         url: /2026/research-note-template/
   toc:
     enabled: true
-    title: On This Page
-    min_headings: 3
+    title: Contents
+    min_headings: 1
   comments:
-    enabled: false
+    enabled: true
     # provider can be "giscus" or "utterances".
-    provider: giscus
+    provider: utterances
     # Giscus needs repo, repo_id, category, and category_id.
     # Get them from https://giscus.app after enabling GitHub Discussions.
     repo: ZaychikLiu/blog

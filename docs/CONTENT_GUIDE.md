@@ -329,7 +329,8 @@ advanced:
   toc:
     enabled: true
   comments:
-    enabled: false
+    enabled: true
+    provider: utterances
   analytics:
     google_analytics:
       measurement_id:
@@ -391,30 +392,40 @@ source/_posts/my-good-post.md
 advanced:
   toc:
     enabled: true
-    title: On This Page
-    min_headings: 3
+    title: Contents
+    min_headings: 1
 ```
 
-如果文章标题少于 `min_headings`，目录不会显示。
+默认只要文章里有 h2/h3 标题，目录就会显示在文章侧栏。
 
 ## 16. 评论系统
 
-模板支持两种 GitHub 风格评论：Giscus 和 Utterances。
+模板默认启用 Utterances 评论区，读者可以用 GitHub 账号在文章底部留言。上线后需要安装 Utterances GitHub App，并确认仓库 Issues 已开启。
 
-### Giscus
+### Utterances
 
-Giscus 基于 GitHub Discussions，样式更现代。
+Utterances 基于 GitHub Issues，配置更少。
 
 准备步骤：
 
-1. 打开 <https://giscus.app>
-2. 输入你的仓库，比如 `ZaychikLiu/blog`
-3. 确认仓库公开
-4. 在仓库 Settings -> Features 开启 Discussions
-5. 安装页面提示安装 Giscus GitHub App
-6. 复制生成的 `data-repo-id` 和 `data-category-id`
+1. 安装 <https://github.com/apps/utterances>
+2. 允许它访问你的博客仓库
+3. 打开仓库 Settings -> Features，确认 Issues 已开启
+4. 部署后点进任意文章底部，确认评论框出现
 
-然后改 `_config.yml`：
+当前默认配置：
+
+```yaml
+advanced:
+  comments:
+    enabled: true
+    provider: utterances
+    utterances_repo: ZaychikLiu/blog
+    utterances_issue_term: pathname
+    utterances_theme: github-light
+```
+
+如果你更喜欢 GitHub Discussions 风格，也可以改用 Giscus：
 
 ```yaml
 advanced:
@@ -428,28 +439,6 @@ advanced:
     mapping: pathname
     theme: light
     lang: en
-```
-
-### Utterances
-
-Utterances 基于 GitHub Issues，配置更少。
-
-准备步骤：
-
-1. 安装 <https://github.com/apps/utterances>
-2. 允许它访问你的博客仓库
-3. 打开仓库 Issues
-
-然后改：
-
-```yaml
-advanced:
-  comments:
-    enabled: true
-    provider: utterances
-    utterances_repo: ZaychikLiu/blog
-    utterances_issue_term: pathname
-    utterances_theme: github-light
 ```
 
 只选一种评论系统，不要两个都开。
