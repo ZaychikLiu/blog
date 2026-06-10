@@ -1,0 +1,132 @@
+# Icarus theme configuration
+# Docs: https://ppoffice.github.io/hexo-theme-icarus/
+
+version: 5.1.0
+variant: default
+
+# Text logo keeps the ppwwyyxx.com/blog feel.
+logo:
+  text: "Zaychik's Blog"
+
+head:
+  favicon: /img/favicon.svg
+  manifest:
+    name: "Zaychik's Blog"
+    short_name: Blog
+    start_url: /blog/
+    theme_color: "#3273dc"
+    background_color: "#ffffff"
+    display: standalone
+    icons:
+      - src: /img/favicon.svg
+        sizes: 512x512
+        type: image/svg+xml
+  open_graph:
+    type: blog
+    image: /img/og_image.svg
+  structured_data:
+    author: Zaychik Liu
+    image: /img/og_image.svg
+  meta:
+    - name=theme-color;content=#3273dc
+  rss: /atom.xml
+
+navbar:
+  menu:
+    Archives: /archives
+    Tags: /tags
+    About Me: /about
+  links:
+    RSS:
+      icon: fas fa-rss
+      url: /atom.xml
+    GitHub:
+      icon: fab fa-github
+      url: https://github.com/ZaychikLiu
+
+footer:
+  copyright: "© 2026 Zaychik Liu"
+  links:
+    Creative Commons:
+      icon: fab fa-creative-commons
+      url: https://creativecommons.org/licenses/by-sa/4.0/
+    Attribution:
+      icon: fab fa-creative-commons-by
+      url: https://creativecommons.org/licenses/by-sa/4.0/
+    ShareAlike:
+      icon: fab fa-creative-commons-sa
+      url: https://creativecommons.org/licenses/by-sa/4.0/
+
+article:
+  highlight:
+    theme: monokai
+    clipboard: false
+    fold: ""
+  readtime: false
+  update_time: false
+  licenses:
+    Creative Commons:
+      icon: fab fa-creative-commons
+      url: https://creativecommons.org/licenses/by-sa/4.0/
+    CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
+
+search:
+  type: insight
+  include_pages: true
+
+sidebar:
+  left:
+    sticky: true
+  right:
+    sticky: true
+
+widgets:
+  - position: left
+    type: profile
+    author: Zaychik Liu
+    author_title:
+    location:
+    avatar: /img/avatar.svg
+    avatar_rounded: true
+    gravatar:
+    follow_link: https://github.com/ZaychikLiu
+    social_links:
+      GitHub:
+        icon: fab fa-github
+        url: https://github.com/ZaychikLiu
+      Google Scholar:
+        icon: ai ai-google-scholar
+        url: https://scholar.google.com/
+      LinkedIn:
+        icon: fab fa-linkedin
+        url: https://www.linkedin.com/
+      RSS:
+        icon: fas fa-rss
+        url: /atom.xml
+  - position: left
+    type: recent_posts
+  - position: left
+    type: tags
+    order_by: -length
+    amount: 20
+    show_count: true
+  - position: left
+    type: archives
+
+plugins:
+  animejs: true
+  back_to_top: true
+  busuanzi: false
+  gallery: true
+  google_analytics:
+    tracking_id:
+  katex: false
+  mathjax: true
+  outdated_browser: false
+  progressbar: true
+  pjax: false
+
+providers:
+  cdn: jsdelivr
+  fontcdn: google
+  iconcdn: fontawesome

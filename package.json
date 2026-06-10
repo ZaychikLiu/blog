@@ -1,0 +1,36 @@
+{
+  "name": "hexo-icarus-blog-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Hexo + Icarus blog template modeled after ppwwyyxx.com/blog.",
+  "scripts": {
+    "clean": "hexo clean",
+    "build": "hexo generate",
+    "dev": "hexo server",
+    "new": "hexo new post",
+    "deploy": "hexo clean && hexo generate"
+  },
+  "hexo": {
+    "version": "7.3.0"
+  },
+  "dependencies": {
+    "bulma-stylus": "0.8.0",
+    "hexo": "^7.3.0",
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-filter-github-emojis": "^3.0.5",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-robotstxt": "^0.2.0",
+    "hexo-generator-sitemap": "^3.0.1",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-pagination": "^3.0.0",
+    "hexo-renderer-inferno": "^1.0.2",
+    "hexo-renderer-marked": "^6.3.0",
+    "hexo-renderer-stylus": "^3.0.1",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-icarus": "^6.1.1"
+  },
+  "devDependencies": {}
+}

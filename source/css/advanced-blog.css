@@ -1,0 +1,89 @@
+#reading-progress {
+  position: fixed;
+  inset: 0 auto auto 0;
+  width: 0;
+  height: 3px;
+  background: #3273dc;
+  z-index: 3000;
+  transition: width 0.08s linear;
+}
+
+.advanced-share {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0 0;
+}
+
+.advanced-share a,
+.advanced-share button {
+  align-items: center;
+  background: transparent;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  color: #4a4a4a;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  gap: 0.35rem;
+  line-height: 1.5;
+  padding: 0.35rem 0.65rem;
+}
+
+.advanced-share a:hover,
+.advanced-share button:hover {
+  border-color: #3273dc;
+  color: #3273dc;
+}
+
+.advanced-popular-list {
+  margin: 0;
+}
+
+.advanced-popular-list a {
+  color: inherit;
+  display: block;
+  padding: 0.35rem 0;
+}
+
+.advanced-popular-list a:hover {
+  color: #3273dc;
+}
+
+.advanced-toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advanced-toc-list a {
+  color: inherit;
+  display: block;
+  font-size: 0.9rem;
+  padding: 0.25rem 0;
+}
+
+.advanced-toc-list .depth-3 {
+  padding-left: 1rem;
+}
+
+.advanced-heading-anchor {
+  color: #b5b5b5;
+  font-size: 0.8em;
+  margin-left: 0.35rem;
+  opacity: 0;
+  text-decoration: none;
+}
+
+.content h2:hover .advanced-heading-anchor,
+.content h3:hover .advanced-heading-anchor {
+  opacity: 1;
+}
+
+.advanced-comments-card {
+  margin-top: 1rem;
+}
+
+.advanced-edit-link {
+  margin-top: 1rem;
+}
