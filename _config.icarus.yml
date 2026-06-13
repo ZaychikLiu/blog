@@ -44,7 +44,7 @@ navbar:
       icon: fab fa-github
       url: https://github.com/ZaychikLiu
     Xiaohongshu:
-      icon: fas fa-book-open
+      icon: xhs-icon
       url: https://www.xiaohongshu.com/user/profile/your-xiaohongshu-id
 
 footer:
@@ -98,13 +98,13 @@ widgets:
         icon: fab fa-github
         url: https://github.com/ZaychikLiu
       Google Scholar:
-        icon: ai ai-google-scholar
+        icon: fas fa-graduation-cap
         url: https://scholar.google.com/
       LinkedIn:
         icon: fab fa-linkedin
         url: https://www.linkedin.com/
       Xiaohongshu:
-        icon: fas fa-book-open
+        icon: xhs-icon
         url: https://www.xiaohongshu.com/user/profile/your-xiaohongshu-id
       RSS:
         icon: fas fa-rss

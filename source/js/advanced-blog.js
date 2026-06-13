@@ -159,7 +159,7 @@
         const button = document.createElement('button');
         button.type = 'button';
         button.title = 'Copy text for Xiaohongshu';
-        button.innerHTML = '<i class="fas fa-book-open"></i><span>小红书</span>';
+        button.innerHTML = '<i class="xhs-icon"></i><span>小红书</span>';
         button.addEventListener('click', async () => {
           await copyText(xiaohongshuText(share.xiaohongshu_text, title, url));
           setTemporaryLabel(button, '已复制', '小红书');
@@ -172,7 +172,7 @@
       a.href = shareUrl(platform, title, url);
       a.target = platform === 'email' ? '_self' : '_blank';
       a.rel = 'noopener';
-      const icon = platform === 'x' ? 'fab fa-x-twitter'
+      const icon = platform === 'x' ? 'x-icon'
         : platform === 'linkedin' ? 'fab fa-linkedin'
           : 'fas fa-envelope';
       const label = platform === 'x' ? 'X'
