@@ -111,7 +111,7 @@ robotstxt:
 # Optional advanced features injected by scripts/advanced-features.js.
 # Keep empty values until you create the corresponding third-party service.
 advanced:
-  asset_version: 20260613-icons
+  asset_version: 20260613-xhs-logo
   reading_progress: true
   heading_anchors: true
   share:
