@@ -6,12 +6,12 @@ variant: default
 
 # Text logo keeps the ppwwyyxx.com/blog feel.
 logo:
-  text: "Zaychik's Blog"
+  text: "Feiyang Liu's Blog"
 
 head:
   favicon: /img/favicon.svg
   manifest:
-    name: "Zaychik's Blog"
+    name: "Feiyang Liu's Blog"
     short_name: Blog
     start_url: /blog/
     theme_color: "#3273dc"
@@ -25,7 +25,7 @@ head:
     type: blog
     image: /img/og_image.svg
   structured_data:
-    author: Zaychik Liu
+    author: Feiyang Liu
     image: /img/og_image.svg
   meta:
     - name=theme-color;content=#3273dc
@@ -48,7 +48,7 @@ navbar:
       url: https://www.xiaohongshu.com/user/profile/your-xiaohongshu-id
 
 footer:
-  copyright: "© 2026 Zaychik Liu"
+  copyright: "© 2026 Feiyang Liu"
   links:
     Creative Commons:
       icon: fab fa-creative-commons
@@ -86,10 +86,10 @@ sidebar:
 widgets:
   - position: left
     type: profile
-    author: Zaychik Liu
+    author: Feiyang Liu
     author_title:
     location:
-    avatar: /img/avatar.svg
+    avatar: /img/avatar.jpg
     avatar_rounded: true
     gravatar:
     follow_link: https://github.com/ZaychikLiu
