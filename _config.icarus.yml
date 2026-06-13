@@ -37,9 +37,9 @@ navbar:
     Tags: /tags
     About Me: /about
   links:
-    RSS:
-      icon: fas fa-rss
-      url: /atom.xml
+    Twitter:
+      icon: fab fa-twitter
+      url: https://twitter.com/ZaychikLiu
     GitHub:
       icon: fab fa-github
       url: https://github.com/ZaychikLiu
@@ -106,9 +106,9 @@ widgets:
       Xiaohongshu:
         icon: xhs-icon
         url: https://www.xiaohongshu.com/user/profile/your-xiaohongshu-id
-      RSS:
-        icon: fas fa-rss
-        url: /atom.xml
+      Twitter:
+        icon: fab fa-twitter
+        url: https://twitter.com/ZaychikLiu
   - position: left
     type: recent_posts
   - position: left
