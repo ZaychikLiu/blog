@@ -10,6 +10,13 @@ function assetUrl(config, path) {
   return `${root}${path.replace(/^\/+/, '')}`;
 }
 
+function versionedAssetUrl(config, path) {
+  const advanced = config.advanced || {};
+  const version = advanced.asset_version;
+  const url = assetUrl(config, path);
+  return version ? `${url}?v=${encodeURIComponent(version)}` : url;
+}
+
 function safeJson(value) {
   return JSON.stringify(value || {})
     .replace(/</g, '\\u003c')
@@ -45,7 +52,7 @@ hexo.extend.injector.register('head_end', function () {
   const config = hexo.config;
   const advanced = config.advanced || {};
   const tags = [
-    `<link rel="stylesheet" href="${assetUrl(config, 'css/advanced-blog.css')}">`
+    `<link rel="stylesheet" href="${versionedAssetUrl(config, 'css/advanced-blog.css')}">`
   ];
 
   if (advanced.analytics) {
@@ -61,5 +68,5 @@ hexo.extend.injector.register('body_end', function () {
   advanced.root = getRoot(config);
 
   return `<script>window.BLOG_ADVANCED=${safeJson(advanced)};</script>
-<script src="${assetUrl(config, 'js/advanced-blog.js')}" defer></script>`;
+<script src="${versionedAssetUrl(config, 'js/advanced-blog.js')}" defer></script>`;
 }, 'default');
