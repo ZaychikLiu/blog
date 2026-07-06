@@ -99,7 +99,7 @@ a:hover {
 }
 
 .xhs-icon::before {
-  background-image: url("../img/xiaohongshu.svg?v=20260706-dark-theme-5");
+  background-image: url("../img/xiaohongshu.svg?v=20260706-publications");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -322,6 +322,78 @@ table,
   color: var(--blog-text);
 }
 
+.publication-list {
+  margin-top: 0.25rem;
+}
+
+.publication-item {
+  border-top: 1px solid var(--blog-border);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(180px, 34%) 1fr;
+  padding: 1.15rem 0;
+}
+
+.publication-item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.publication-thumb {
+  border: 1px solid var(--blog-border);
+  border-radius: 6px;
+  display: block;
+  overflow: hidden;
+}
+
+.publication-thumb img {
+  aspect-ratio: 5 / 3;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.publication-body h2 {
+  color: var(--blog-heading);
+  font-size: 1.2rem;
+  line-height: 1.35;
+  margin: 0 0 0.55rem;
+}
+
+.publication-venue {
+  color: var(--blog-accent);
+  font-size: 0.78rem;
+  letter-spacing: 0;
+  margin: 0 0 0.45rem;
+  text-transform: uppercase;
+}
+
+.publication-authors {
+  color: var(--blog-text);
+  margin: 0 0 0.8rem;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.publication-links a {
+  border: 1px solid var(--blog-border);
+  border-radius: 4px;
+  color: var(--blog-accent);
+  display: inline-flex;
+  line-height: 1.4;
+  padding: 0.28rem 0.6rem;
+}
+
+.publication-links a:hover {
+  background: var(--blog-accent-soft);
+  border-color: var(--blog-accent);
+}
+
 #reading-progress {
   position: fixed;
   inset: 0 auto auto 0;
@@ -524,5 +596,9 @@ table,
 
   .navbar-main .navbar-item {
     flex: 0 0 auto;
+  }
+
+  .publication-item {
+    grid-template-columns: 1fr;
   }
 }

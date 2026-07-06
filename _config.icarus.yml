@@ -35,6 +35,7 @@ navbar:
   menu:
     Blog: /categories/Blog
     Research: /categories/Research
+    Pub: /pub
     Archives: /archives
     Tags: /tags
     About Me: /about
