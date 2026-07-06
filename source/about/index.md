@@ -6,9 +6,4 @@ layout: page
 
 Hi, I am Feiyang Liu.
 
-This is a short personal page. Replace it with:
-
-- who you are
-- what you work on
-- your research or engineering interests
-- links to GitHub, Google Scholar, X, email, or your homepage
+我是华南理工大学自动化专业本科生，预计 2027 年毕业。
