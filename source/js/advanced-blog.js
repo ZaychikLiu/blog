@@ -286,6 +286,21 @@
     });
   }
 
+  function addBilingualListingTitles() {
+    const titles = cfg.bilingual_titles || [];
+    if (!titles.length) return;
+
+    function normalize(path) {
+      return `/${path.replace(root, '/').replace(/^\/+|\/+$/g, '')}/`;
+    }
+
+    document.querySelectorAll('.widget[data-type="recent-posts"] .title a, .timeline .title a').forEach((link) => {
+      const match = titles.find((entry) => normalize(link.pathname) === normalize(entry.path || ''));
+      if (!match || !match.zh || !match.en) return;
+      link.textContent = `${match.zh} / ${match.en}`;
+    });
+  }
+
   function addEditLink() {
     const edit = cfg.edit_link || {};
     const main = singleArticle();
@@ -311,6 +326,7 @@
     addToc();
     addComments();
     addLanguageSwitchers();
+    addBilingualListingTitles();
     addEditLink();
   }
 

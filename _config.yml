@@ -111,7 +111,11 @@ robotstxt:
 # Optional advanced features injected by scripts/advanced-features.js.
 # Keep empty values until you create the corresponding third-party service.
 advanced:
-  asset_version: 20260706-bilingual
+  asset_version: 20260706-bilingual-sidebar
+  bilingual_titles:
+    - path: /2026/beyond-vision/
+      zh: Vision之外
+      en: Beyond Vision
   reading_progress: true
   heading_anchors: true
   share:
