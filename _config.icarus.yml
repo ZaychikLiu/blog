@@ -39,7 +39,7 @@ navbar:
   links:
     Twitter:
       icon: fab fa-twitter
-      url: https://twitter.com/ZaychikLiu
+      url: https://x.com/ZaychikLFY
     GitHub:
       icon: fab fa-github
       url: https://github.com/ZaychikLiu
@@ -100,15 +100,12 @@ widgets:
       Google Scholar:
         icon: fas fa-graduation-cap
         url: https://scholar.google.com/
-      LinkedIn:
-        icon: fab fa-linkedin
-        url: https://www.linkedin.com/
       Xiaohongshu:
         icon: xhs-icon
         url: https://www.xiaohongshu.com/user/profile/62a32fde000000001b02936e
       Twitter:
         icon: fab fa-twitter
-        url: https://twitter.com/ZaychikLiu
+        url: https://x.com/ZaychikLFY
   - position: left
     type: recent_posts
   - position: left

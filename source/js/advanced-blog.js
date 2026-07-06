@@ -110,9 +110,7 @@
     const encodedTitle = encodeURIComponent(title);
     switch (platform) {
       case 'x':
-        return `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`;
-      case 'linkedin':
-        return `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+        return `https://x.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`;
       case 'email':
         return `mailto:?subject=${encodedTitle}&body=${encodedUrl}`;
       default:
@@ -128,7 +126,7 @@
     const content = main.querySelector('article.article .content');
     if (!content) return;
 
-    const platforms = share.platforms || ['x', 'linkedin', 'email', 'xiaohongshu', 'copy'];
+    const platforms = share.platforms || ['x', 'email', 'xiaohongshu', 'copy'];
     const title = document.querySelector('article.article h1.title')?.textContent?.trim() || document.title;
     const url = window.location.href.split('#')[0];
 
@@ -163,12 +161,8 @@
       a.href = shareUrl(platform, title, url);
       a.target = platform === 'email' ? '_self' : '_blank';
       a.rel = 'noopener';
-      const icon = platform === 'x' ? 'x-icon'
-        : platform === 'linkedin' ? 'fab fa-linkedin'
-          : 'fas fa-envelope';
-      const label = platform === 'x' ? 'X'
-        : platform === 'linkedin' ? 'LinkedIn'
-          : 'Email';
+      const icon = platform === 'x' ? 'x-icon' : 'fas fa-envelope';
+      const label = platform === 'x' ? 'X' : 'Email';
       a.innerHTML = `<i class="${icon}"></i><span>${label}</span>`;
       bar.appendChild(a);
     });

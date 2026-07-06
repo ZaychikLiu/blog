@@ -11,4 +11,4 @@ This is a short personal page. Replace it with:
 - who you are
 - what you work on
 - your research or engineering interests
-- links to GitHub, Google Scholar, LinkedIn, X, email, or your homepage
+- links to GitHub, Google Scholar, X, email, or your homepage
