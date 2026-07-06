@@ -36,7 +36,6 @@ navbar:
     Blog: /categories/Blog
     Pub: /pub
     Archives: /archives
-    Tags: /tags
     About Me: /about
   links:
     Twitter:
