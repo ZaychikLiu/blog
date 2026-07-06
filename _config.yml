@@ -116,7 +116,7 @@ advanced:
   heading_anchors: true
   share:
     enabled: true
-    xiaohongshu_profile: https://www.xiaohongshu.com/user/profile/your-xiaohongshu-id
+    xiaohongshu_profile: https://www.xiaohongshu.com/user/profile/62a32fde000000001b02936e
     xiaohongshu_text: "{title}\n{url}"
     platforms:
       - x

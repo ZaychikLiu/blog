@@ -45,7 +45,7 @@ navbar:
       url: https://github.com/ZaychikLiu
     Xiaohongshu:
       icon: xhs-icon
-      url: https://www.xiaohongshu.com/user/profile/your-xiaohongshu-id
+      url: https://www.xiaohongshu.com/user/profile/62a32fde000000001b02936e
 
 footer:
   copyright: "© 2026 Feiyang Liu"
@@ -105,7 +105,7 @@ widgets:
         url: https://www.linkedin.com/
       Xiaohongshu:
         icon: xhs-icon
-        url: https://www.xiaohongshu.com/user/profile/your-xiaohongshu-id
+        url: https://www.xiaohongshu.com/user/profile/62a32fde000000001b02936e
       Twitter:
         icon: fab fa-twitter
         url: https://twitter.com/ZaychikLiu
