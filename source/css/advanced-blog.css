@@ -49,7 +49,7 @@ a,
 }
 
 .xhs-icon::before {
-  background-image: url("../img/xiaohongshu.svg");
+  background-image: url("../img/xiaohongshu.svg?v=20260706-english");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

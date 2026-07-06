@@ -6,4 +6,4 @@ layout: page
 
 Hi, I am Feiyang Liu.
 
-我是华南理工大学自动化专业本科生，预计 2027 年毕业。
+I am an undergraduate student majoring in Automation at South China University of Technology, expected to graduate in 2027.

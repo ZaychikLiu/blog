@@ -152,7 +152,7 @@
         a.target = '_blank';
         a.rel = 'noopener';
         a.title = 'Open Xiaohongshu profile';
-        a.innerHTML = '<i class="xhs-icon"></i><span>小红书</span>';
+        a.innerHTML = '<i class="xhs-icon"></i><span>Xiaohongshu</span>';
         bar.appendChild(a);
         return;
       }
@@ -217,7 +217,7 @@
     const card = document.createElement('div');
     card.className = 'card advanced-comments-card';
     card.id = 'comments';
-    card.innerHTML = '<div class="card-content"><h3 class="title is-5">Comments</h3><div class="advanced-comments-hint">评论区使用 GitHub Issues/Discussions。上线后安装对应 GitHub App 即可让读者留言。</div><div class="advanced-comments-target"></div></div>';
+    card.innerHTML = '<div class="card-content"><h3 class="title is-5">Comments</h3><div class="advanced-comments-hint">Comments are powered by GitHub Issues or Discussions. Install the corresponding GitHub App after deployment to let readers leave comments.</div><div class="advanced-comments-target"></div></div>';
     main.appendChild(card);
     const target = card.querySelector('.advanced-comments-target');
 
