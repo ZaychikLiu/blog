@@ -125,13 +125,9 @@ advanced:
       - xiaohongshu
       - copy
   popular_posts:
-    enabled: true
+    enabled: false
     title: Popular Posts
-    posts:
-      - title: Hello Hexo Icarus
-        url: /2026/hello-hexo-icarus/
-      - title: Research Note Template
-        url: /2026/research-note-template/
+    posts: []
   toc:
     enabled: true
     title: Contents
