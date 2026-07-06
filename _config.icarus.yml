@@ -33,6 +33,8 @@ head:
 
 navbar:
   menu:
+    Blog: /categories/Blog
+    Research: /categories/Research
     Archives: /archives
     Tags: /tags
     About Me: /about

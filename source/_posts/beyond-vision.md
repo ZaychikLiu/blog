@@ -4,7 +4,7 @@ date: 2026-07-06 12:00:00
 tags:
   - Blog
 categories:
-  - Research
+  - Blog
 ---
 
 <div class="post-excerpt-intro">

@@ -301,6 +301,34 @@
     });
   }
 
+  function addConfiguredCategoryLinks() {
+    const categories = cfg.category_links || [];
+    if (!categories.length) return;
+
+    const widget = document.querySelector('.widget[data-type="categories"]');
+    const list = widget?.querySelector('.menu-list');
+    if (!list) return;
+
+    const existing = new Set(Array.from(list.querySelectorAll('a')).map((link) => {
+      const label = link.querySelector('.level-start .level-item');
+      return (label || link).textContent.trim();
+    }));
+    categories.forEach((category) => {
+      if (!category.name || existing.has(category.name)) return;
+
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      link.className = 'level is-mobile';
+      link.href = withRoot(category.path || `/categories/${category.name}/`);
+      link.innerHTML = `
+        <span class="level-start"><span class="level-item">${category.name}</span></span>
+        <span class="level-end"><span class="level-item tag">0</span></span>`;
+      item.appendChild(link);
+      list.appendChild(item);
+      existing.add(category.name);
+    });
+  }
+
   function addEditLink() {
     const edit = cfg.edit_link || {};
     const main = singleArticle();
@@ -327,6 +355,7 @@
     addComments();
     addLanguageSwitchers();
     addBilingualListingTitles();
+    addConfiguredCategoryLinks();
     addEditLink();
   }
 

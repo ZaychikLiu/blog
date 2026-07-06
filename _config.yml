@@ -53,7 +53,7 @@ prismjs:
   enable: false
 
 # Category & tag
-default_category: notes
+default_category: Blog
 category_map:
 tag_map:
 
@@ -111,7 +111,12 @@ robotstxt:
 # Optional advanced features injected by scripts/advanced-features.js.
 # Keep empty values until you create the corresponding third-party service.
 advanced:
-  asset_version: 20260706-bilingual-sidebar
+  asset_version: 20260706-categories
+  category_links:
+    - name: Blog
+      path: /categories/Blog/
+    - name: Research
+      path: /categories/Research/
   bilingual_titles:
     - path: /2026/beyond-vision/
       zh: Vision之外
