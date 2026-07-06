@@ -251,6 +251,41 @@
     target.appendChild(script);
   }
 
+  function addLanguageSwitchers() {
+    const posts = Array.from(document.querySelectorAll('[data-bilingual-post]'));
+    posts.forEach((post) => {
+      const buttons = Array.from(post.querySelectorAll('[data-lang-button]'));
+      const contents = Array.from(post.querySelectorAll('[data-lang-content]'));
+      if (!buttons.length || !contents.length) return;
+
+      const article = post.closest('article.article');
+      const articleTitle = article?.querySelector('h1.title');
+      const excerptIntro = article?.querySelector('.post-excerpt-intro');
+      if (articleTitle && excerptIntro) excerptIntro.hidden = true;
+
+      function titleFor(lang) {
+        return lang === 'en' ? post.dataset.titleEn : post.dataset.titleZh;
+      }
+
+      function setLanguage(lang) {
+        contents.forEach((content) => {
+          content.hidden = content.dataset.langContent !== lang;
+        });
+        buttons.forEach((button) => {
+          const isActive = button.dataset.langButton === lang;
+          button.classList.toggle('is-active', isActive);
+          button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+        if (articleTitle && titleFor(lang)) articleTitle.textContent = titleFor(lang);
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => setLanguage(button.dataset.langButton));
+      });
+      setLanguage(post.dataset.defaultLang || 'zh');
+    });
+  }
+
   function addEditLink() {
     const edit = cfg.edit_link || {};
     const main = singleArticle();
@@ -275,6 +310,7 @@
     addShareButtons();
     addToc();
     addComments();
+    addLanguageSwitchers();
     addEditLink();
   }
 
