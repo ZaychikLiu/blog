@@ -98,13 +98,6 @@
     textarea.remove();
   }
 
-  function xiaohongshuText(template, title, url) {
-    return (template || '{title}\n{url}')
-      .replace(/\\n/g, '\n')
-      .replace(/\{title\}/g, title)
-      .replace(/\{url\}/g, url);
-  }
-
   function setTemporaryLabel(button, text, resetText) {
     const span = button.querySelector('span');
     if (!span) return;
@@ -156,15 +149,13 @@
       }
 
       if (platform === 'xiaohongshu') {
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.title = 'Copy text for Xiaohongshu';
-        button.innerHTML = '<i class="xhs-icon"></i><span>小红书</span>';
-        button.addEventListener('click', async () => {
-          await copyText(xiaohongshuText(share.xiaohongshu_text, title, url));
-          setTemporaryLabel(button, '已复制', '小红书');
-        });
-        bar.appendChild(button);
+        const a = document.createElement('a');
+        a.href = share.xiaohongshu_profile || url;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.title = 'Open Xiaohongshu profile';
+        a.innerHTML = '<i class="xhs-icon"></i><span>小红书</span>';
+        bar.appendChild(a);
         return;
       }
 
