@@ -10,7 +10,7 @@ I am an undergraduate student majoring in Automation at South China University o
 
 ## Research Views
 
-My views have shifted quite a bit over the past few years.
+My views have shifted quite a bit over the past few months.
 
 I used to be a committed believer in Vision-Centric intelligence: the idea that vision could remain the center of the system and approach general intelligence through visual proxy tasks and the scaling of visual representations. I now lean toward a different view: the future will come from multimodal tasks trained from scratch.
 
