@@ -44,6 +44,9 @@ navbar:
     GitHub:
       icon: fab fa-github
       url: https://github.com/ZaychikLiu
+    Gmail:
+      icon: fas fa-envelope
+      url: mailto:a160130k@gmail.com
     Xiaohongshu:
       icon: xhs-icon
       url: https://www.xiaohongshu.com/user/profile/62a32fde000000001b02936e
@@ -101,6 +104,9 @@ widgets:
       Google Scholar:
         icon: fas fa-graduation-cap
         url: https://scholar.google.com/
+      Gmail:
+        icon: fas fa-envelope
+        url: mailto:a160130k@gmail.com
       Xiaohongshu:
         icon: xhs-icon
         url: https://www.xiaohongshu.com/user/profile/62a32fde000000001b02936e
