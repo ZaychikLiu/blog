@@ -28,19 +28,19 @@ I once thought world models should avoid explicitly predicting pixels. I now thi
   <article class="academic-experience-item" role="listitem">
     <div class="academic-experience-logos" aria-label="Princeton University, Nanyang Technological University, and NVIDIA">
       <div class="academic-partner-mark academic-partner-mark--princeton">
-        <img src="/blog/img/academic/princeton-shield.svg" alt="Princeton University">
+        <img src="/blog/img/academic/princeton-shield.svg" alt="">
       </div>
       <i class="fas fa-plus academic-partner-separator" aria-hidden="true"></i>
       <div class="academic-partner-mark academic-partner-mark--ntu">
-        <img src="/blog/img/academic/ntu.svg" alt="Nanyang Technological University">
+        <img src="/blog/img/academic/ntu.svg" alt="">
       </div>
       <i class="fas fa-plus academic-partner-separator" aria-hidden="true"></i>
       <div class="academic-partner-mark academic-partner-mark--nvidia">
-        <img src="/blog/img/academic/nvidia.svg" alt="NVIDIA">
+        <img src="/blog/img/academic/nvidia.svg" alt="">
       </div>
     </div>
     <div class="academic-experience-content">
-      <p>Currently collaborating on a shared research project with Baiang Li, Juanxi Tian, and Wei Xiong.</p>
+      <p>Currently collaborating on a shared research project with Baiang Li (Princeton University), Juanxi Tian (Nanyang Technological University), and Wei Xiong (NVIDIA).</p>
     </div>
   </article>
 </div>
