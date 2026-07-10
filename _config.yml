@@ -111,7 +111,7 @@ robotstxt:
 # Optional advanced features injected by scripts/advanced-features.js.
 # Keep empty values until you create the corresponding third-party service.
 advanced:
-  asset_version: 20260706-publications
+  asset_version: 20260710-academic-internship
   category_links:
     - name: Blog
       path: /categories/Blog/

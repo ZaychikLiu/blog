@@ -517,6 +517,68 @@ table,
   opacity: 1;
 }
 
+.academic-experience {
+  border-top: 1px solid var(--blog-border);
+  margin: 1.1rem 0 0;
+}
+
+.academic-experience-item {
+  align-items: center;
+  border-bottom: 1px solid var(--blog-border-soft);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 3.25rem minmax(0, 1fr);
+  padding: 1.1rem 0;
+}
+
+.academic-experience-logo {
+  align-items: center;
+  background: var(--blog-surface-raised);
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  display: inline-flex;
+  font-size: 1.35rem;
+  height: 3.25rem;
+  justify-content: center;
+  width: 3.25rem;
+}
+
+.academic-experience-item--princeton .academic-experience-logo {
+  color: #f58025;
+}
+
+.academic-experience-item--ntu .academic-experience-logo {
+  color: #db4b3f;
+}
+
+.academic-experience-item--nvidia .academic-experience-logo {
+  color: #76b900;
+}
+
+.academic-experience-content h3 {
+  color: var(--blog-heading);
+  font-size: 1rem;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.academic-experience-content p {
+  color: var(--blog-muted);
+  margin: 0.22rem 0 0;
+}
+
+@media screen and (max-width: 480px) {
+  .academic-experience-item {
+    gap: 0.8rem;
+    grid-template-columns: 2.8rem minmax(0, 1fr);
+  }
+
+  .academic-experience-logo {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+}
+
 .advanced-comments-card {
   border-top: 3px solid var(--blog-accent);
   margin-top: 1rem;

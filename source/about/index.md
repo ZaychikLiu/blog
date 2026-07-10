@@ -8,10 +8,6 @@ Hi, I am Feiyang Liu.
 
 I am an undergraduate student majoring in Automation at South China University of Technology, expected to graduate in 2027.
 
-## <i class="fas fa-user-graduate"></i> Academic Internship
-
-My current academic internship experience includes research collaborations with Baiang Li at Princeton University, Juanxi Tian at Nanyang Technological University (NTU), and Wei Xiong at NVIDIA.
-
 ## Research Views
 
 My views have shifted quite a bit over the past few months.
@@ -25,3 +21,35 @@ I also used to be skeptical of language as a modality because it carries so much
 I also used to believe in scaling 3D Vision as a general backbone. Today, I see 3D Vision less as the backbone itself and more as a medium for control and interaction.
 
 I once thought world models should avoid explicitly predicting pixels. I now think a world model should in fact be a family of models whose answers are pixels. Video generation, and vision models more broadly, should not fully take on the role of planner; they should focus on rendering.
+
+## <i class="fas fa-user-graduate"></i> Academic Internship
+
+<div class="academic-experience" role="list">
+  <article class="academic-experience-item academic-experience-item--princeton" role="listitem">
+    <div class="academic-experience-logo" aria-label="Princeton University">
+      <i class="fas fa-university" aria-hidden="true"></i>
+    </div>
+    <div class="academic-experience-content">
+      <h3>Princeton University</h3>
+      <p>Research collaboration with Baiang Li.</p>
+    </div>
+  </article>
+  <article class="academic-experience-item academic-experience-item--ntu" role="listitem">
+    <div class="academic-experience-logo" aria-label="Nanyang Technological University">
+      <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+    <div class="academic-experience-content">
+      <h3>Nanyang Technological University (NTU)</h3>
+      <p>Research collaboration with Juanxi Tian.</p>
+    </div>
+  </article>
+  <article class="academic-experience-item academic-experience-item--nvidia" role="listitem">
+    <div class="academic-experience-logo" aria-label="NVIDIA">
+      <i class="fab fa-nvidia" aria-hidden="true"></i>
+    </div>
+    <div class="academic-experience-content">
+      <h3>NVIDIA</h3>
+      <p>Research collaboration with Wei Xiong.</p>
+    </div>
+  </article>
+</div>
