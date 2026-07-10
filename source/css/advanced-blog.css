@@ -530,8 +530,10 @@ table,
 .academic-experience-logos {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.7rem;
   margin-bottom: 0.9rem;
+  position: relative;
 }
 
 .academic-partner-mark {
@@ -540,6 +542,7 @@ table,
   border: 1px solid var(--blog-border);
   border-radius: 6px;
   display: flex;
+  flex: 0 0 auto;
   height: 4.25rem;
   justify-content: center;
   padding: 0.58rem;
@@ -578,19 +581,14 @@ table,
 
 .academic-partner-separator {
   color: var(--blog-muted-soft);
+  flex: 0 0 auto;
   font-size: 0.68rem;
-}
-
-.academic-experience-content h3 {
-  color: var(--blog-heading);
-  font-size: 1rem;
-  line-height: 1.35;
-  margin: 0;
+  line-height: 1;
 }
 
 .academic-experience-content p {
   color: var(--blog-muted);
-  margin: 0.22rem 0 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -606,6 +604,10 @@ table,
 
   .academic-partner-mark--nvidia {
     width: 6.1rem;
+  }
+
+  .academic-partner-separator {
+    display: none;
   }
 }
 

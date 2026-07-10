@@ -40,7 +40,6 @@ I once thought world models should avoid explicitly predicting pixels. I now thi
       </div>
     </div>
     <div class="academic-experience-content">
-      <h3>Joint Research Collaboration</h3>
       <p>Currently collaborating on a shared research project with Baiang Li (Princeton University), Juanxi Tian (Nanyang Technological University), and Wei Xiong (NVIDIA).</p>
     </div>
   </article>
