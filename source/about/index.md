@@ -8,6 +8,10 @@ Hi, I am Feiyang Liu.
 
 I am an undergraduate student majoring in Automation at South China University of Technology, expected to graduate in 2027.
 
+## <i class="fas fa-user-graduate"></i> Academic Internship
+
+My current academic internship experience includes research collaborations with Baiang Li at Princeton University, Juanxi Tian at Nanyang Technological University (NTU), and Wei Xiong at NVIDIA.
+
 ## Research Views
 
 My views have shifted quite a bit over the past few months.
