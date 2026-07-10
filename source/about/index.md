@@ -25,31 +25,23 @@ I once thought world models should avoid explicitly predicting pixels. I now thi
 ## <i class="fas fa-user-graduate"></i> Academic Internship
 
 <div class="academic-experience" role="list">
-  <article class="academic-experience-item academic-experience-item--princeton" role="listitem">
-    <div class="academic-experience-logo" aria-label="Princeton University">
-      <i class="fas fa-university" aria-hidden="true"></i>
+  <article class="academic-experience-item" role="listitem">
+    <div class="academic-experience-logos" aria-label="Princeton University, Nanyang Technological University, and NVIDIA">
+      <div class="academic-partner-mark academic-partner-mark--princeton">
+        <img src="/blog/img/academic/princeton.svg" alt="Princeton University">
+      </div>
+      <i class="fas fa-plus academic-partner-separator" aria-hidden="true"></i>
+      <div class="academic-partner-mark academic-partner-mark--ntu">
+        <img src="/blog/img/academic/ntu.svg" alt="Nanyang Technological University">
+      </div>
+      <i class="fas fa-plus academic-partner-separator" aria-hidden="true"></i>
+      <div class="academic-partner-mark academic-partner-mark--nvidia">
+        <img src="/blog/img/academic/nvidia.svg" alt="NVIDIA">
+      </div>
     </div>
     <div class="academic-experience-content">
-      <h3>Princeton University</h3>
-      <p>Research collaboration with Baiang Li.</p>
-    </div>
-  </article>
-  <article class="academic-experience-item academic-experience-item--ntu" role="listitem">
-    <div class="academic-experience-logo" aria-label="Nanyang Technological University">
-      <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-    </div>
-    <div class="academic-experience-content">
-      <h3>Nanyang Technological University (NTU)</h3>
-      <p>Research collaboration with Juanxi Tian.</p>
-    </div>
-  </article>
-  <article class="academic-experience-item academic-experience-item--nvidia" role="listitem">
-    <div class="academic-experience-logo" aria-label="NVIDIA">
-      <i class="fab fa-nvidia" aria-hidden="true"></i>
-    </div>
-    <div class="academic-experience-content">
-      <h3>NVIDIA</h3>
-      <p>Research collaboration with Wei Xiong.</p>
+      <h3>Joint Research Collaboration</h3>
+      <p>Currently collaborating on a shared research project with Baiang Li (Princeton University), Juanxi Tian (Nanyang Technological University), and Wei Xiong (NVIDIA).</p>
     </div>
   </article>
 </div>

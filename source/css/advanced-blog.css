@@ -523,36 +523,62 @@ table,
 }
 
 .academic-experience-item {
-  align-items: center;
   border-bottom: 1px solid var(--blog-border-soft);
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 3.25rem minmax(0, 1fr);
   padding: 1.1rem 0;
 }
 
-.academic-experience-logo {
+.academic-experience-logos {
   align-items: center;
-  background: var(--blog-surface-raised);
-  border: 1px solid currentColor;
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 0.9rem;
+}
+
+.academic-partner-mark {
+  align-items: center;
+  background: #f5f5f2;
+  border: 1px solid var(--blog-border);
   border-radius: 6px;
-  display: inline-flex;
-  font-size: 1.35rem;
-  height: 3.25rem;
+  display: flex;
+  height: 4.25rem;
   justify-content: center;
-  width: 3.25rem;
+  padding: 0.58rem;
+  width: 4.25rem;
 }
 
-.academic-experience-item--princeton .academic-experience-logo {
-  color: #f58025;
+.academic-partner-mark img {
+  display: block;
+  height: 100%;
+  max-height: 3rem;
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
-.academic-experience-item--ntu .academic-experience-logo {
-  color: #db4b3f;
+.academic-partner-mark--princeton {
+  background: #ee7f2d;
 }
 
-.academic-experience-item--nvidia .academic-experience-logo {
-  color: #76b900;
+.academic-partner-mark--ntu {
+  background: #f5f5f2;
+}
+
+.academic-partner-mark--ntu img {
+  max-height: 3.25rem;
+}
+
+.academic-partner-mark--nvidia {
+  background: #111318;
+  width: 7.35rem;
+}
+
+.academic-partner-mark--nvidia img {
+  max-height: 2.8rem;
+}
+
+.academic-partner-separator {
+  color: var(--blog-muted-soft);
+  font-size: 0.68rem;
 }
 
 .academic-experience-content h3 {
@@ -568,14 +594,18 @@ table,
 }
 
 @media screen and (max-width: 480px) {
-  .academic-experience-item {
-    gap: 0.8rem;
-    grid-template-columns: 2.8rem minmax(0, 1fr);
+  .academic-experience-logos {
+    gap: 0.5rem;
   }
 
-  .academic-experience-logo {
-    height: 2.8rem;
-    width: 2.8rem;
+  .academic-partner-mark {
+    height: 3.65rem;
+    padding: 0.5rem;
+    width: 3.65rem;
+  }
+
+  .academic-partner-mark--nvidia {
+    width: 6.1rem;
   }
 }
 
