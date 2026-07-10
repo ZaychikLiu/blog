@@ -572,18 +572,11 @@ table,
 
 .academic-partner-mark--nvidia {
   background: #111318;
-  overflow: hidden;
+  width: 7.35rem;
 }
 
 .academic-partner-mark--nvidia img {
-  clip-path: inset(0 0 30% 0);
-  flex: 0 0 auto;
-  height: 5.25rem;
-  max-height: none;
-  max-width: none;
-  position: relative;
-  top: 0;
-  width: auto;
+  max-height: 2.8rem;
 }
 
 .academic-partner-separator {
@@ -607,6 +600,10 @@ table,
     height: 3.65rem;
     padding: 0.5rem;
     width: 3.65rem;
+  }
+
+  .academic-partner-mark--nvidia {
+    width: 6.1rem;
   }
 
   .academic-partner-separator {
